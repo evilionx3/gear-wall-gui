@@ -1,30 +1,15 @@
-local TeleportService = game:GetService("TeleportService")
+if game.PlaceId == 6816362093 then
+print("hi - test all gears")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/gear-wall-gui/refs/heads/main/testallgears.lua"))()
+elseif game.PlaceId == 264207955 then
+    print("hi - test all of robloxs gears")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/gear-wall-gui/refs/heads/main/testallofrblxgear.lua"))()
 
--- Function to teleport the player to a specific Place ID
-local function tp(placeId)
-    -- Ensure the placeId is provided
-    if placeId then
-        -- Teleport to the specified place
-        TeleportService:Teleport(placeId)
-    else
-        warn("Invalid Place ID.")
-    end
+elseif game.PlaceId == 17471847036 then
+    print("hi - test every gear and become op")
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/gear-wall-gui/refs/heads/main/testallofrblxgear.lua"))()
+  
+else
+    print("unsupported game")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/gear-wall-gui/refs/heads/main/unsupported.lua"))()
 end
-
-  local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/shidemuri/scripts/main/ui_lib.lua"))()
-    local Pendulum = Library:New("gearwall gui (unsupported game) by evilionx3")
-    
-    local gearwall = Pendulum:NewTab("supported games")
-
- gearwall:NewButton("test all of robloxs gear", "mreow", function()
-    tp(264207955)
-    
-        end)
- gearwall:NewButton("test all gears", "mreow", function()
-    tp(6816362093)
-    
-        end)
-gearwall:NewButton("test every gear and become op", "mreow", function()
-    tp(17471847036)
-    
-        end)
